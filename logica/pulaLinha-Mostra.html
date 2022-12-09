@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pula linha só que bom </title>
+</head>
+<body>
+    <script>
+        //código passado pelo professor 
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+    
+        function pulaLinhaOld() {
+
+            document.write("<br>");
+            document.write("<br>");
+        }
+    
+        //primeira tentativa de melhorar o código passado pelo professor (se limitando a usar document.write)
+
+        function pulaLinhaPlus(numLinha) {
+            for (i = 0; i < numLinha; i++ ) {
+                document.write("<br>");
+            } 
+        }
+        // Tentativa final de melhorar o código do professor usando o padrão JS-ES6 (se limitando a usar document.write).
+        const pulaLinha = (numLinha = 1) => document.write("<br>".repeat(numLinha))
+
+        pulaLinhaOld();
+        pulaLinhaPlus(2)
+        pulaLinhaP(2)
+
+        const mostraPlus = (frase = "") => { document.write(frase); pulaLinha(1); }
+
+        mostra("Olá mundo!")
+        mostra("Arrow functions são OP!")       	
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tabuada</title>
+</head>
+<body>
+
+	<script>
+			//funções de "print"
+			const pulaLinha = (numLinha = 1) => document.write(("<br>").repeat(numLinha))	
+			const mostra = (frase = "") => { document.write(frase); pulaLinha(1); }
+
+			//Contador que mostra o número escolhido, o multiplicador (até 10) e então o resultado, formando uma tabuada.
+			const tabuada = (numTabuada = 1) => { 
+				for(let multiplicador = 1; multiplicador <= 10; multiplicador++) {
+					mostra(`${numTabuada} x ${multiplicador} = ${numTabuada*multiplicador}`)
+				} 
+			}
+
+			askTabuada = parseInt(prompt("Digite um número para saber sua tabuada."))
+
+			//Caso não seja um número mostre a mensagem   | Caso contrário execute a função
+			isNaN(askTabuada) ? mostra("Não é um número") : tabuada(askTabuada)
+			
+				
+		</script>
+	
+</body>
+</html>
+
+
+
+
+
+
+

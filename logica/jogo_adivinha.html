@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinho de adivinhação</title>
+</head>
+<body>
+<script>
+
+//function sorteia(n) {
+//
+//     return (Math.round(Math.random() * n))
+//  }
+
+    //funções de "print"
+    const pulaLinha = (numLinha = 1) => document.write("<br>".repeat(numLinha))
+    const mostra = (frase = "") => { document.write(frase); pulaLinha(1); }
+
+    const sorteia = (n = 1) => Math.round(Math.random() * n)
+    
+    //declaração de variáveis 
+    let n = parseInt(prompt("Digite um número máximo para o jogo"))
+    let numeroPensado = sorteia(n)
+    let chute = parseInt(prompt("Já pensei. Qual você acha que é? 3 tentativas"))
+    console.log(numeroPensado)
+
+    //Check de tentativas. Caso acerte: break caso contrário ele diz se o número é maior ou menor que o esperado e então adiciona uma tentativa para o contador.
+	let tentativas = 1
+
+	while(tentativas <= 3) {
+
+        if(chute == numeroPensado) {
+            
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado)
+            break
+
+        } else if (chute < numeroPensado){
+
+           chute = parseInt(prompt(`Você errou! Eu tinha pensado em um número maior que ${chute}... Tentativa: ${tentativas}`))
+
+        } else {
+
+            chute = parseInt(prompt(`Você errou! Eu tinha pensado em um número menor que ${chute}... Tentativa: ${tentativas}`))
+
+        }
+        tentativas++
+        if (tentativas > 3 ) { continue } 
+	}
+
+
+</script>
+
+</body>
+</html>

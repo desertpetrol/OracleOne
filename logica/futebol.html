@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Futebol</title>
+</head>
+<body>
+	
+	<script>
+		//funções de "print"
+		const pulaLinha = (numLinha = 1) => document.write("<br>".repeat(numLinha))
+		const mostra = (frase = "") => { document.write(frase); pulaLinha(1); }
+
+		let vitorias = parseInt(prompt("Entre com o número de vitórias."))
+		let empates = parseInt(prompt("Entre com o número de empates."))
+					
+		let pontos = (vitorias * 3) + empates
+
+		mostra("Os pontos do seu time é " + pontos)
+
+		if(pontos > 28) {
+			mostra("Seu time está melhor do que o ano passado.")
+		}
+
+		if(pontos < 28) {
+			mostra("Seu time está pior do que o ano passado.")
+		}
+
+		if(pontos == 28) {
+			mostra("Seu time está igual ao ano passado.")
+		}
+
+		mostra("FIM")
+
+	</script>
+
+
+</body>
+</html>
+
+
+
