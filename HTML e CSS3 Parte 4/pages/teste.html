@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main p {
+            background: red;
+        }
+        section > img + p {
+            background: rgb(94, 214, 208); 
+        }
+        img + p { 
+            background: blue;
+        }
+
+        img ~ p {
+            background: yellow;
+        } 
+        
+        .principal p:not(#missao) {
+            background: orange;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <p> qualquer conteudo</p>
+        <section class="principal">
+            <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+    
+            <img class="utensilios" src="../img/cabelo+barba.jpg" alt="Utensilios de um barbeiro." />
+    
+            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+    
+            <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+    
+            <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </section>
+    </main>
+<!-- Seletores avançados CSS
+    Seletor >, para acessar os filhos de determinado elemento. Por exemplo, para acessar todos os p dentro de main:
+
+    main > p {
+    }
+
+Seletor +, para acessar o primeiro irmão de determinado elemento. Por exemplo, para acessar o primeiro p após um img:
+
+    img + p {
+    }
+
+Seletor ~, para acessar todos os irmãos de determinado elemento. Por exemplo, para acessar todos os p após um img:
+
+    img ~ p {
+    }
+
+Seletor not, para acessar os elementos, exceto algum. Por exemplo, para acessar todos os p dentro de main, exceto o p que tem id missao:
+
+    main p:not(#missao) {
+    }
+
+Como fazer contas com CSS, com a propriedade calc -->
+
+    
+</body>
+</html>
+
+
+
+
