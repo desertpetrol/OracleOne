@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+header { 
+    background: #262626;
+    padding: 10px 0;
+}
+
+.nav-container{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.navbar {
+    position: absolute;
+    top: 110px;
+    right: 0;   
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: azure;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: #666666;
+    font-size: 30px;
+    
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 15px 10px;
+    border: #000000 3px solid;
+    border-radius: 16px ;
+    
+}
+
+.produtos li:hover {
+    border-color: rgb(110, 73, 73);;
+}
+
+.produtos li:active {
+    border-color: rgb(110, 38, 38);
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-desc {
+    font-size: 18px;
+
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer { 
+    text-align: center;
+    background: url(/img/bg.jpg);
+    padding: 24px 0;
+
+}
+
+.cc { 
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 12px;
+    margin-top: 16px;
+}
